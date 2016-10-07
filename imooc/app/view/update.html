@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/index/upda/" method="post">
+    <table>
+        <input type="hidden" name="id" value="{{ der.id }}">
+        <tr>
+            <td>用户名</td>
+            <td><input type="text" name="name" value="{{  der.name }}"></td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td><input type="email" name="email" value="{{  der.email }}"></td>
+        </tr>
+        <tr>
+            <td>qq</td>
+            <td><input type="number" name="qq" value="{{  der.qq }}"></td>
+        </tr>
+        <tr>
+            <td>电话</td>
+            <td><input type="number" name="teg" value="{{  der.teg }}"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="修改"></td>
+            <td></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
