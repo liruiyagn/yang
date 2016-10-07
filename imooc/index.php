@@ -15,7 +15,7 @@ if(BEBUG){
 }
 include IMOOC.'/core/common/function.php';//加载类库
 include IMOOC.'/core/coom.php';
-//dump('asdsadd');die;
+
 spl_autoload_register('\core\coom::load');
 \core\coom::run();
 ?>

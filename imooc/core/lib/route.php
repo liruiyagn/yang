@@ -15,6 +15,7 @@ class route{
         if(isset($_SERVER['REQUEST_URI'])&&$_SERVER['REQUEST_URI'] != '/'){
             $path=$_SERVER['REQUEST_URI'];
             $patharr=explode('/',trim($path,'/'));
+//            p($patharr);
             if(isset($patharr)){
                 $this->ctr=$patharr[0];
             }

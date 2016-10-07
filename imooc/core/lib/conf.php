@@ -9,12 +9,10 @@ class conf{
      */
     static public function get($name,$file)
     {
-
         if (isset(self::$conf[$file])){
             return self::$conf[$file][$name];
         }else{
-            $path = IMOOC . '\core\config\\' . $file . '.php';
-//            echo $path;die;
+            $path = IMOOC . '/core/config/' . $file . '.php';
             if (is_file($path)) {
                 $conf = include $path;
                 if (isset($conf[$name])){
@@ -33,7 +31,7 @@ class conf{
         if (isset(self::$conf[$file])){
             return self::$conf[$file];
         }else{
-            $path = IMOOC . '\core\config\\' . $file . '.php';
+            $path = IMOOC . '/core/config/' . $file . '.php';
             if (is_file($path)) {
                 $conf = include $path;
                 self::$conf[$file]=$conf;

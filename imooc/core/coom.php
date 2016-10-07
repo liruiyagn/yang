@@ -11,7 +11,6 @@ class coom{
         $action=$ber->action;
         $strfile=APP.'/ctr/'.$strlClass.'Ctr.php';
         $cltrlClass='\\'.MODULE.'\ctr\\'.$strlClass.'Ctr';
-//        echo $cltrlClass;die;
         if(is_file($strfile)){
             include $strfile;
             $ctr=new $cltrlClass();
